@@ -43,4 +43,100 @@ public abstract class Pokemon
 		return pokemonInfo;
 	}
 
+	/**
+	 * @return the healthPoints
+	 */
+	public int getHealthPoints()
+	{
+		return healthPoints;
+	}
+
+	/**
+	 * @param healthPoints the healthPoints to set
+	 */
+	public void setHealthPoints(int healthPoints)
+	{
+		this.healthPoints = healthPoints;
+	}
+
+	/**
+	 * @return the attaPoints
+	 */
+	public int getAttaPoints()
+	{
+		return attaPoints;
+	}
+
+	/**
+	 * @param attaPoints the attaPoints to set
+	 */
+	public void setAttaPoints(int attaPoints)
+	{
+		this.attaPoints = attaPoints;
+	}
+
+	/**
+	 * @return the enhancementModifier
+	 */
+	public double getEnhancementModifier()
+	{
+		return enhancementModifier;
+	}
+
+	/**
+	 * @param enhancementModifier the enhancementModifier to set
+	 */
+	public void setEnhancementModifier(double enhancementModifier)
+	{
+		this.enhancementModifier = enhancementModifier;
+	}
+
+	/**
+	 * @return the number
+	 */
+	public int getNumber()
+	{
+		return number;
+	}
+
+	/**
+	 * @param number the number to set
+	 */
+	public void setNumber(int number)
+	{
+		this.number = number;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName()
+	{
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	/**
+	 * @return the canEvolve
+	 */
+	public boolean isCanEvolve()
+	{
+		return canEvolve;
+	}
+
+	/**
+	 * @param canEvolve the canEvolve to set
+	 */
+	public void setCanEvolve(boolean canEvolve)
+	{
+		this.canEvolve = canEvolve;
+	}
+
 }
