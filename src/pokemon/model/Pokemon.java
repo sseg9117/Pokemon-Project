@@ -13,7 +13,7 @@ public abstract class Pokemon
 	public Pokemon (int number, String name)
 	{
 		this.name = name;
-		this.number = number;
+		this.setNumber(number);
 	}
 	
 	public final String[] getPokemonTypes()
@@ -42,4 +42,5 @@ public abstract class Pokemon
 		String pokemonInfo = "This pokemon of type:" + this.getClass().getSimpleName();
 		return pokemonInfo;
 	}
+
 }
