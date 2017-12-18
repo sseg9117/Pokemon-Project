@@ -10,7 +10,7 @@ public class MrMime extends Pokemon implements Fairy
 
 	public String sayMrMime()
 	{
-		return null;
+		return " mr mime ";
 	}
 
 	public String sayJiggly()
@@ -20,7 +20,8 @@ public class MrMime extends Pokemon implements Fairy
 
 	public int attack(int attackDamage)
 	{
-		return 0;
+		int damage = 100000;
+		return damage;
 	}
 
 	public int Float(int height)
@@ -30,7 +31,8 @@ public class MrMime extends Pokemon implements Fairy
 
 	public int Twinkle(int twinkleBrightness)
 	{
-		return 0;
+		int brightness = 10000;
+		return brightness;
 	}
 	
 	
