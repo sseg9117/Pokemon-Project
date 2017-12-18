@@ -334,13 +334,13 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
+      <x>400</x>
       <y>140</y>
-      <w>220</w>
+      <w>190</w>
       <h>520</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;10.0;40.0;300.0;180.0;500.0</additional_attributes>
+    <additional_attributes>170.0;10.0;10.0;50.0;20.0;260.0;120.0;270.0;150.0;500.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -351,7 +351,7 @@ bg=pink</panel_attributes>
       <h>550</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;30.0;80.0;420.0;10.0;530.0</additional_attributes>
+    <additional_attributes>240.0;10.0;50.0;30.0;70.0;470.0;10.0;530.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
