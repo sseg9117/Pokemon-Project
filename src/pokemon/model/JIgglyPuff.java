@@ -17,20 +17,20 @@ public class JIgglyPuff extends Pokemon implements Fairy
 	public String sayJiggly()
 	{
 
-		return null;
-	}
-
-	public void Float()
-	{
-		
-	}
-
-	public void Twinkle()
-	{
-		
+		return "JigglyPuff";
 	}
 
 	public int attack(int attackDamage)
+	{
+		return 0;
+	}
+
+	public int Float(int height)
+	{
+		return 0;
+	}
+
+	public int Twinkle(int twinkleBrightness)
 	{
 		return 0;
 	}
