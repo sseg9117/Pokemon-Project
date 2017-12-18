@@ -1,6 +1,8 @@
 package pokemon.model;
 
-public class Dragon
+public interface Dragon
 {
-
+	public int useBlizzard(int damageDone);
+	public int hitByFire(int fireDamage);
+	public String sayDragonair();
 }
