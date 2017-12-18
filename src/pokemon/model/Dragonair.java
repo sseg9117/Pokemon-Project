@@ -29,4 +29,9 @@ public class Dragonair extends Pokemon implements Dragon
 	{
 		return null;
 	}
+
+	public int useDragonDance(int damageDone)
+	{
+		return 0;
+	}
 }

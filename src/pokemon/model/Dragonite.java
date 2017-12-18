@@ -8,19 +8,31 @@ public class Dragonite extends Pokemon implements Dragon
 		super(number, name);
 	}
 
-	public int useBlizzard(int damageDone)
+	public int useDragonDance(int damageDone)
 	{
-		return 0;
+		int moveDamage = 85;
+		return moveDamage;
 	}
 
 	public int hitByFire(int fireDamage)
 	{
-		return 0;
+		int burned = 0;
+		return burned;
 	}
 
 	public String sayDragonite()
 	{
 		return " Dragonite" ;
+	}
+
+	public String sayDragonair()
+	{
+		return null;
+	}
+
+	public int useBlizzard(int damageDone)
+	{
+		return 0;
 	}
 
 }
