@@ -24,4 +24,9 @@ public class Dragonair extends Pokemon implements Dragon
 		int damage = 90;
 		return damage;
 	}
+
+	public String sayDragonite()
+	{
+		return null;
+	}
 }
