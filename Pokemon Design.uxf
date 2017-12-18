@@ -16,13 +16,14 @@ data members
 --
 Constructors 
 and 
-methods</panel_attributes>
+methods
+bg=light_gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>60</x>
       <y>270</y>
       <w>220</w>
       <h>120</h>
@@ -31,7 +32,8 @@ methods</panel_attributes>
 --
 
 methods
-</panel_attributes>
+
+bg=light_gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -52,21 +54,6 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>50</x>
-      <y>630</y>
-      <w>190</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>/pokemon.model :: Clefairy/
---
-
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>40</x>
       <y>400</y>
       <w>310</w>
       <h>150</h>
@@ -76,7 +63,8 @@ bg=blue</panel_attributes>
 + annoy(int) : int
 + sayDerpy() : String
 + derpDerpDerp() : void`
-</panel_attributes>
+
+bg=light_gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -101,7 +89,8 @@ bg=blue</panel_attributes>
 + toString() : String
 +getPokemonInformation() : String
 + getPokemonTypes() : String
-</panel_attributes>
+
+bg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -114,9 +103,12 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Dragonair/
 --
++ sayDragonair() : string
++ useBlizzard() : int
++ hitByFire() : int
 
 
-</panel_attributes>
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -129,47 +121,42 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Dragon/
 --
++ hitByFire
++ useMove
 
 
-</panel_attributes>
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>610</y>
+      <x>770</x>
+      <y>620</y>
       <w>200</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: Dragonite/
 --
++ sayDragonite() : string
++ useDragonDance() : int
++ hitByFire() : int
 
 
-</panel_attributes>
+
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>850</x>
-      <y>730</y>
-      <w>50</w>
-      <h>100</h>
+      <y>740</y>
+      <w>160</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;30.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>980</x>
-      <y>730</y>
-      <w>30</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;20.0;20.0;140.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -185,95 +172,80 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
+      <x>150</x>
       <y>630</y>
       <w>200</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: Mr. Mime/
 --
++ sayMrMime() : String
++ attack() int
++ Twinkle() int
++ Float() int
 
 
-</panel_attributes>
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>640</y>
+      <x>400</x>
+      <y>650</y>
       <w>210</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: JigglyPuff/
 --
++ sayJiffly() : string
++ attack() : int
++ Twinkle() : int
++ Float() : int
 
 
-</panel_attributes>
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>610</y>
-      <w>190</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>/pokemon.model :: Dratini/
---
-
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>220</x>
-      <y>810</y>
+      <x>180</x>
+      <y>800</y>
       <w>270</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>/pokemon.model :: Fairy/
 --
++ Float
++ Twinkle
++ attack
 
 
-</panel_attributes>
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
+      <x>240</x>
       <y>750</y>
-      <w>40</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;20.0;60.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>480</x>
-      <y>760</y>
       <w>100</w>
-      <h>120</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>80.0;10.0;70.0;80.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>750</y>
-      <w>120</w>
-      <h>140</h>
+      <x>440</x>
+      <y>770</y>
+      <w>130</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>60.0;10.0;10.0;60.0;100.0;120.0</additional_attributes>
+    <additional_attributes>50.0;10.0;110.0;70.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -285,9 +257,11 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Charmander/
 --
++ sayCharmander() : String
++ throwFireball() : String
++ hurtByWater() : String
 
-
-</panel_attributes>
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -298,26 +272,12 @@ bg=blue</panel_attributes>
       <w>220</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>/pokemon.model :: Charzard/
+    <panel_attributes>/pokemon.model :: Charizard/
 --
-
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>670</x>
-      <y>260</y>
-      <w>210</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>/pokemon.model :: Charm/
---
-
-
-</panel_attributes>
++ sayCharzard() : String
++ useEmberFireBlast() : String
++ hurtByWater() : String
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -330,9 +290,12 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Fire/
 --
++ hurtByWater
++ throwFire
++ breathFire
 
 
-</panel_attributes>
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -345,17 +308,6 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>110.0;10.0;50.0;40.0;10.0;140.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>730</x>
-      <y>380</y>
-      <w>60</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>40.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
