@@ -1,11 +1,12 @@
 package pokemon.model;
 
-public class Dragonite extends Pokemon implements Dragon
+public class Dragonite extends Dragonair implements Dragon
 {
 
 	public Dragonite(int number, String name)
 	{
-		super(number, name);
+		super(149, "Dragonite");
+		setup();
 	}
 
 	public int useDragonDance(int effectGiven)
@@ -34,5 +35,11 @@ public class Dragonite extends Pokemon implements Dragon
 	{
 		return 0;
 	}
-
+	protected void setup()
+	{
+		this.setAttaPoints(234);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(123);
+	}
 }

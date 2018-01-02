@@ -5,7 +5,8 @@ public class JIgglyPuff extends Pokemon implements Fairy
 
 	public JIgglyPuff(int number, String name)
 	{
-		super(number, name);
+		super(39, "JigglyPuff");
+		setup();
 	}
 
 	public String sayMrMime()
@@ -38,5 +39,11 @@ public class JIgglyPuff extends Pokemon implements Fairy
 		int brightness = 10000;
 		return brightness;
 	}
-
+	protected void setup()
+	{
+		this.setAttaPoints(234);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(123);
+	}
 }

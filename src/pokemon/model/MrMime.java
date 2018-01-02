@@ -3,9 +3,11 @@ package pokemon.model;
 public class MrMime extends Pokemon implements Fairy
 {
 
+	private static final boolean false = false;
 	public MrMime(int number, String name)
 	{
-		super(number, name);
+		super(122, "MrMime");
+		setup();
 	}
 
 	public String sayMrMime()
@@ -34,6 +36,12 @@ public class MrMime extends Pokemon implements Fairy
 		int brightness = 10000;
 		return brightness;
 	}
-	
+	protected void setup()
+	{
+		this.setAttaPoints(234);
+		this.setCanEvolve(false);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(123);
+	}
 	
 }

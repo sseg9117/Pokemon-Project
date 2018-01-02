@@ -4,7 +4,8 @@ public class Charizard extends Pokemon implements Fire
 {
 	public Charizard(int number, String name)
 	{
-		super(number, name);
+		super(6, "Charizard");
+		setup();
 	}
 	
 	public String sayCharizard()
@@ -33,6 +34,12 @@ public class Charizard extends Pokemon implements Fire
 	{
 		return null;
 	}
-	
+	protected void setup()
+	{
+		this.setAttaPoints(234);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(123);
+	}
 	
 }

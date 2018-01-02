@@ -1,10 +1,11 @@
 package pokemon.model;
 
-public class Charmander extends Pokemon implements Fire
+public class Charmander extends Charizard implements Fire
 {	
 	public Charmander(int number, String name)
 	{
-		super(number, name);
+		super(4, "Charmander");
+		setup();
 	}
 	
 	public int hurtByWater(int waterHurtDamage)
@@ -28,5 +29,11 @@ public class Charmander extends Pokemon implements Fire
 	{
 		return 0;
 	}
-
+	protected void setup()
+	{
+		this.setAttaPoints(234);
+		this.setCanEvolve(true);
+		this.setEnhancementModifier(.89);
+		this.setHealthPoints(123);
+	}
 }
