@@ -3,7 +3,6 @@ package pokemon.model;
 public class MrMime extends Pokemon implements Fairy
 {
 
-	private static final boolean false = false;
 	public MrMime(int number, String name)
 	{
 		super(122, "MrMime");
@@ -12,7 +11,7 @@ public class MrMime extends Pokemon implements Fairy
 
 	public String sayMrMime()
 	{
-		return " mr mime ";
+		return "MrMime";
 	}
 
 	public String sayJiggly()
