@@ -2,7 +2,7 @@ package pokemon.controller;
 
 public class PokemonRunner
 {
-	public static void main(Strings [] args)
+	public static void main(String [] args)
 	{
 		PokemonController myapp = new PokemonController();
 		myapp.start();

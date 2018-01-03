@@ -6,12 +6,14 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SpringLayout;
 
 import pokemon.controller.PokemonController;
 
 public class PokemonPanel
 {
 	private PokemonController appController;
+	private SpringLayout appLayout;
 	
 	private JLabel healthLabel;
 	private JLabel attackLabel;
@@ -45,8 +47,8 @@ public class PokemonPanel
 		nameField.setText(appController.getPokedex().get(index).getName());;
 		evolvableBox.setSelected(appController.getPokedex().get(index).isCanEvolve());
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
-		attackField.setText(appController.getPokedex().get(index).getAttackPoints()+ "");
+		attackField.setText(appController.getPokedex().get(index).getAttaPoints()+ "");
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
-		modifierField.setText(appController.getPokedex().get(index).getEhancementModifier() + "");				
+		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");				
 	}
 }
