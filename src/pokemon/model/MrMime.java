@@ -3,7 +3,7 @@ package pokemon.model;
 public class MrMime extends Pokemon implements Fairy
 {
 
-	public MrMime(int number, String name)
+	public MrMime()
 	{
 		super(122, "MrMime");
 		setup();

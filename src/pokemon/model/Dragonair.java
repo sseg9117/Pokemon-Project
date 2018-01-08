@@ -3,13 +3,20 @@ package pokemon.model;
 public class Dragonair extends Pokemon implements Dragon,Fairy
 {
 
-	public Dragonair(int number, String name)
+	public Dragonair()
 	{
 		super(148, "Dragonair");
 		
 		setup();
 	}
 	
+	public Dragonair(int i, String string)
+	{
+		super(148, "Dragonair");
+		
+		setup();
+	}
+
 	public String sayDragonair()
 	{
 		return " Dragonair ";

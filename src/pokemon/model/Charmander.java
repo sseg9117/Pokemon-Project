@@ -2,7 +2,7 @@ package pokemon.model;
 
 public class Charmander extends Charizard implements Fire
 {	
-	public Charmander(int number, String name)
+	public Charmander()
 	{
 		super(4, "Charmander");
 		setup();

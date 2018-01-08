@@ -3,7 +3,7 @@ package pokemon.model;
 public class Dragonite extends Dragonair implements Dragon
 {
 
-	public Dragonite(int number, String name)
+	public Dragonite()
 	{
 		super(149, "Dragonite");
 		setup();

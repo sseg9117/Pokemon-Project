@@ -3,7 +3,7 @@ package pokemon.model;
 public class JIgglyPuff extends Pokemon implements Fairy
 {
 
-	public JIgglyPuff(int number, String name)
+	public JIgglyPuff()
 	{
 		super(39, "JigglyPuff");
 		setup();
