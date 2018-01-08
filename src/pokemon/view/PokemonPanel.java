@@ -74,10 +74,6 @@ public class PokemonPanel extends JPanel
 		this.add(typeArea);
 	}
 
-	private void setLayout(SpringLayout appLayout2)
-	{
-		
-	}
 	
 	public PokemonPanel(PokemonController appController)
 	{
@@ -133,7 +129,7 @@ public class PokemonPanel extends JPanel
 			{
 				int selectedPokemonIndex = pokemonDropdown.getSelectedIndex();
 				updatePokemonInfo(selectedPokemonIndex);
-				updateImage();
+//				updateImage();
 				updateTypePanels();
 				repaint();
 			}
@@ -148,7 +144,7 @@ public class PokemonPanel extends JPanel
 
 	private void updatePokemonInfo(int index)
 	{
-		nameField.setText(appController.getPokedex().get(index).getName());
+		nameField.setText(appController.getPokedex().get(index).getName());;
 		evolvableBox.setSelected(appController.getPokedex().get(index).isCanEvolve());
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
 		attackField.setText(appController.getPokedex().get(index).getAttaPoints()+ "");
