@@ -84,24 +84,58 @@ public class PokemonPanel extends JPanel
 		
 		evolvableBox = new JCheckBox();
 		nameField= new JTextField("name");
+		appLayout.putConstraint(SpringLayout.NORTH, nameField, 78, SpringLayout.NORTH, this);
 		numberField = new JTextField("##");
+		appLayout.putConstraint(SpringLayout.NORTH, evolvableBox, 29, SpringLayout.SOUTH, numberField);
+		appLayout.putConstraint(SpringLayout.EAST, numberField, 0, SpringLayout.EAST, nameField);
 		attackField = new JTextField("ap");
+		appLayout.putConstraint(SpringLayout.EAST, attackField, 0, SpringLayout.EAST, nameField);
 		healthField = new JTextField("hp");
 		modifierField = new JTextField("mod");
+		appLayout.putConstraint(SpringLayout.WEST, modifierField, 6, SpringLayout.EAST, evolvableBox);
 		
 		iconLabel = new JLabel("pokemon", new ImageIcon(getClass().getResource("/pokemon/view/images/PokemonLogo.png")), JLabel.CENTER);
+		appLayout.putConstraint(SpringLayout.NORTH, healthField, -5, SpringLayout.NORTH, iconLabel);
+		appLayout.putConstraint(SpringLayout.WEST, healthField, 23, SpringLayout.EAST, iconLabel);
 				
 		nameLabel = new JLabel("name");
+		appLayout.putConstraint(SpringLayout.WEST, nameLabel, 10, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, nameLabel, -201, SpringLayout.SOUTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, nameField, 6, SpringLayout.EAST, nameLabel);
 		evolvableLabel = new JLabel("evolvable");
+		appLayout.putConstraint(SpringLayout.NORTH, evolvableLabel, 167, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, evolvableBox, 6, SpringLayout.EAST, evolvableLabel);
 		numberLabel = new JLabel("number");
+		appLayout.putConstraint(SpringLayout.NORTH, numberLabel, 111, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, numberLabel, 10, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.NORTH, numberField, -5, SpringLayout.NORTH, numberLabel);
 		attackLabel = new JLabel("attack");
+		appLayout.putConstraint(SpringLayout.NORTH, iconLabel, 15, SpringLayout.SOUTH, attackLabel);
+		appLayout.putConstraint(SpringLayout.WEST, iconLabel, 0, SpringLayout.WEST, attackLabel);
+		appLayout.putConstraint(SpringLayout.NORTH, attackLabel, 11, SpringLayout.SOUTH, evolvableLabel);
+		appLayout.putConstraint(SpringLayout.WEST, attackLabel, 10, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.WEST, evolvableLabel, 0, SpringLayout.WEST, attackLabel);
+		appLayout.putConstraint(SpringLayout.NORTH, attackField, -5, SpringLayout.NORTH, attackLabel);
 		modifierLabel = new JLabel("modifier");
+		appLayout.putConstraint(SpringLayout.NORTH, modifierField, -5, SpringLayout.NORTH, modifierLabel);
+		appLayout.putConstraint(SpringLayout.SOUTH, modifierLabel, -6, SpringLayout.NORTH, evolvableLabel);
+		appLayout.putConstraint(SpringLayout.EAST, modifierLabel, 0, SpringLayout.EAST, attackField);
 		pokemonDropdown = new JComboBox();
+		appLayout.putConstraint(SpringLayout.NORTH, pokemonDropdown, 10, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.WEST, pokemonDropdown, 199, SpringLayout.WEST, this);
 		clearButton = new JButton("clear");
 		saveButton = new JButton("save");
+		appLayout.putConstraint(SpringLayout.NORTH, clearButton, 0, SpringLayout.NORTH, saveButton);
+		appLayout.putConstraint(SpringLayout.EAST, clearButton, -3, SpringLayout.WEST, saveButton);
+		appLayout.putConstraint(SpringLayout.SOUTH, saveButton, -10, SpringLayout.SOUTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, saveButton, -23, SpringLayout.EAST, this);
 		
 		discriptionArea = new JTextArea(4,10);
+		appLayout.putConstraint(SpringLayout.SOUTH, discriptionArea, 0, SpringLayout.SOUTH, iconLabel);
+		appLayout.putConstraint(SpringLayout.EAST, discriptionArea, -30, SpringLayout.EAST, this);
 		typeArea = new JTextArea(4,15);
+		appLayout.putConstraint(SpringLayout.SOUTH, typeArea, 0, SpringLayout.SOUTH, modifierLabel);
+		appLayout.putConstraint(SpringLayout.EAST, typeArea, 0, SpringLayout.EAST, saveButton);
 		
 		firstType = new JPanel();
 		secondType = new JPanel();
