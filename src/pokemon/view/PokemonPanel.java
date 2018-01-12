@@ -42,7 +42,7 @@ public class PokemonPanel extends JPanel
 	
 	private JButton saveButton;
 	private JButton clearButton;
-	private JComboBox pokemonDropdown;
+	private JComboBox<?> pokemonDropdown;
 	
 	private JPanel firstType;
 	private JPanel secondType;
@@ -120,7 +120,7 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.NORTH, modifierField, -5, SpringLayout.NORTH, modifierLabel);
 		appLayout.putConstraint(SpringLayout.SOUTH, modifierLabel, -6, SpringLayout.NORTH, evolvableLabel);
 		appLayout.putConstraint(SpringLayout.EAST, modifierLabel, 0, SpringLayout.EAST, attackField);
-		pokemonDropdown = new JComboBox();
+		pokemonDropdown = new JComboBox<Object>();
 		appLayout.putConstraint(SpringLayout.NORTH, pokemonDropdown, 10, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.WEST, pokemonDropdown, 199, SpringLayout.WEST, this);
 		clearButton = new JButton("clear");
@@ -183,7 +183,17 @@ public class PokemonPanel extends JPanel
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
 		attackField.setText(appController.getPokedex().get(index).getAttaPoints()+ "");
 		healthField.setText(appController.getPokedex().get(index).getHealthPoints() + "");
-		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");				
+		modifierField.setText(appController.getPokedex().get(index).getEnhancementModifier() + "");	
+		
+		
+		//Update text area
+		discriptionArea.setText(appController.getPokedex().get(index).toString());
+		typeArea.setText("");
+		
+		for (String current : appController.getPokedex().get(index).getPokemonTypes())
+		{
+			typeArea.append(current +"\n");
+		}
 	}
 	
 	private void setupComboBox()
@@ -227,4 +237,23 @@ public class PokemonPanel extends JPanel
 		}
 	}
   }
+	private void updateImage()
+	{
+		String path = "/";
+		String defaultName = "PokemonLogo";
+		String name = pokemonDropdown.getSelectedItem().toString();
+		String extension = ".png";
+		ImageIcon pokemonIcon;
+		
+		try
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + name + extension));
+		}
+		catch (NullPointerException missingImageFile)
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName +extension));
+		}
+		
+		iconLabel.setIcon(pokemonIcon);
+	}
 }
