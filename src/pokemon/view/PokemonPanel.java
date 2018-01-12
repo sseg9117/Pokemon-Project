@@ -163,7 +163,7 @@ public class PokemonPanel extends JPanel
 			{
 				int selectedPokemonIndex = pokemonDropdown.getSelectedIndex();
 				updatePokemonInfo(selectedPokemonIndex);
-//				updateImage();
+				updateImage();
 				updateTypePanels();
 				repaint();
 			}
@@ -178,6 +178,7 @@ public class PokemonPanel extends JPanel
 
 	private void updatePokemonInfo(int index)
 	{
+		//
 		nameField.setText(appController.getPokedex().get(index).getName());;
 		evolvableBox.setSelected(appController.getPokedex().get(index).isCanEvolve());
 		numberField.setText(appController.getPokedex().get(index).getNumber() + "");
@@ -239,7 +240,7 @@ public class PokemonPanel extends JPanel
   }
 	private void updateImage()
 	{
-		String path = "/";
+		String path = "/pokemon/view/images/";
 		String defaultName = "PokemonLogo";
 		String name = pokemonDropdown.getSelectedItem().toString();
 		String extension = ".png";
