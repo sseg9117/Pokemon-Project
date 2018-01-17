@@ -23,13 +23,9 @@ public class PokemonController
 		pokedex = new ArrayList<Pokemon>();
 		buildPokedex();
 		
-		setAppFrame(new PokemonFrame(this));
+		appFrame = new PokemonFrame(this);
 	}
 	
-	public void setAppFrame(PokemonFrame appFrame)
-	{
-		this.appFrame = appFrame;
-	}
 	private void buildPokedex()
 	{
 		pokedex.add (new Charizard());
@@ -49,13 +45,13 @@ public class PokemonController
 	
 	public boolean isValidInteger(String input)
 	{
-		return false;
+		return true;
 		
 	}
 	
 	public boolean isValidouble(String input)
 	{
-		return false;
+		return true;
 	}
 
 	public void start()
@@ -84,6 +80,9 @@ public class PokemonController
 		selected.setEnhancementModifier(modify);
 		selected.setName(name);
 		selected.setHealthPoints(heath);
+		
+		FileController.savePokemonToFile((ArrayList<Pokemon>) pokedex);
+		
 		
 		
 	}
