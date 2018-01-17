@@ -22,8 +22,14 @@ public class PokemonController
 	{
 		pokedex = new ArrayList<Pokemon>();
 		buildPokedex();
+		
+		setAppFrame(new PokemonFrame(this));
 	}
 	
+	public void setAppFrame(PokemonFrame appFrame)
+	{
+		this.appFrame = appFrame;
+	}
 	private void buildPokedex()
 	{
 		pokedex.add (new Charizard());
@@ -81,4 +87,5 @@ public class PokemonController
 		
 		
 	}
+
 }

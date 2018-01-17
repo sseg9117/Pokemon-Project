@@ -113,7 +113,7 @@ public class PokemonPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.EAST, typeArea, 0, SpringLayout.EAST, healthField);
 
 		firstType = new JPanel();
-		secondType = new JPanel();
+		setSecondType(new JPanel());
 
 		setupComboBox();
 		updateTypePanels();
@@ -244,6 +244,16 @@ public class PokemonPanel extends JPanel
 			pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
 		}
 		iconLabel.setIcon(pokemonIcon);
+	}
+
+	public JPanel getSecondType()
+	{
+		return secondType;
+	}
+
+	public void setSecondType(JPanel secondType)
+	{
+		this.secondType = secondType;
 	}
 
 }
